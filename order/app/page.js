@@ -1,12 +1,18 @@
-import { headers } from "next/headers";
-import Image from "next/image";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Menu from "./components/Menu";
+import Hero from "./Hero";
+import About from "./About";
+import Menu from "./Menu";
+import Contact from "./Contact";
+import Support from "./Support";
+
 
 export default function Home() {
   return (
-<header />
-
+    <main>
+      <Hero />
+      <About />
+      <Menu />
+      <Contact />
+      <Support />
+    </main>
   );
 }

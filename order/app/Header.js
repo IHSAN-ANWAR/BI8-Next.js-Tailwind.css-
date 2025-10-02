@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import './Header.css'; // keep this for your custom nav-link or button styles
 
 const Header = () => {
   return (
@@ -20,27 +19,34 @@ const Header = () => {
             </Link>
           </li>
           <li>
-        <Link href="/" className=" nav-link text-white font-semibold ">
+        <Link href="/about" className=" nav-link text-white font-semibold ">
               About
             </Link>
           </li>
           <li>
-           <Link href="/" className=" nav-link text-white font-semibold ">
+           <Link href="/contact" className=" nav-link text-white font-semibold ">
               Book Now
             </Link>
           </li>
           <li>
-            <Link href="/" className=" nav-link text-white font-semibold ">
+            <Link href="/menu" className=" nav-link text-white font-semibold ">
               Menu
+            </Link>
+          </li>
+             <li>
+            <Link href="/support" className=" nav-link text-white font-semibold ">
+              Support
             </Link>
           </li>
         </ul>
 
-        {/* Order Button */}
-       
-           <button className="text-white border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition">
-            Login
-          </button>
+        {/* Login Link */}
+        <Link
+          href="/login"
+          className="text-white border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition"
+        >
+          Login
+        </Link>
 
       </nav>
     </header>
